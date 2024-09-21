@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/color/48/mercedes-benz.png" type="image/png">
+    <title>Mercedes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header nav {
+            background-color: #3867d6;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+            padding: 10px;
+            color: white;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: right;
+        }
+        nav ul li a:hover {
+            background-color: #4b7bec;
+            border-radius: 5px;
+        }
+        .slider {
+            width: 100%;
+            max-height: 600px;
+            overflow: hidden;
+            margin: 20px auto;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+            width: 300%;
+        }
+        .slide {
+            width: 33.3333%;
+            flex-shrink: 0;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            max-height: 600px;
+        }
+        #main-content {
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            background-image: url('https://images.unsplash.com/photo-1698429894931-fa699270a2fa?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+        }
+        .content-section {
+            display: none;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .content-section.active {
+            display: block;
+        }
+        footer {
+            background-color: #3867d6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+        .phone-icon {
+            width: 18px;
+            height: 18px;
+            margin-left: 5px;
+        }
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+            .slider {
+                max-height: 400px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .slider {
+                max-height: 300px;
+            }
+            footer p {
+                font-size: 12px;
+            }
+            .social-icons img {
+                width: 40px;
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link">Mercedes</a></li>
+            <li><a href="bmw.html" class="nav-link">BMW</a></li>
+            <li><a href="porsche.html" class="nav-link">Porsche</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main-content">
+    <div class="mercedes-section">
+        <h2 style="display: flex; justify-content: center; color: white">Mercedes</h2>
+        <p style="width: 80%; text-align: center; margin: 0 auto; color: white">Mercedes-Benz is a world-class luxury car brand known for its exceptional quality, innovation, and elegant design. With a perfect blend of performance, comfort, and cutting-edge technology, Mercedes stands out as a symbol of prestige and sophistication.</p>
+        <div id="mercedes" class="content-section active">
+            <div class="slider" style="width: 50%">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="https://images6.alphacoders.com/121/1215704.jpg" alt="Mercedes F1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/846/674/565/car-white-car-mercedes-benz-300sl-vehicle-wallpaper-preview.jpg" alt="Mercedes">
+                    </div>
+                    <div class="slide">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/655/589/132/car-mercedes-amg-gt-vehicle-yellow-cars-wallpaper-preview.jpg" alt="Mercedes">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <iframe width="1000" height="600" src="https://www.youtube.com/embed/tr1WTCp5Iqg" title="Mercedes Video" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100013987264880" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/5968/5968764.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" alt="Facebook"></a>
+        <a href="https://www.instagram.com/abdullahhoonmain/" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" alt="Instagram"></a>
+    </div>
+    <p>Email: <img class="phone-icon" src="https://cdn-icons-png.freepik.com/256/3916/3916631.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" alt="Email"> muhammadabdullahzubairmalik@gmail.com</p>
+    <p>Phone: <img class="phone-icon" src="https://cdn-icons-png.freepik.com/256/455/455705.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" alt="Phone"> +92 123456789</p>
+</footer>
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelector('.slides');
+    const slideCount = document.querySelectorAll('.slide').length;
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slideCount;
+        slides.style.transform = `translateX(-${(currentIndex * 100) / slideCount}%)`;
+    }
+    setInterval(nextSlide, 3000);
+</script>
+</body>
+</html>
